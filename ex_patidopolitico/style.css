@@ -1,0 +1,898 @@
+/*importa a fonte do google fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+/*fonte utilizada no corpo do texto*/
+body {
+    font-family: "Fredoka", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*cores do menu de navegação*/
+.background-azul {
+    background: linear-gradient(#34435E, #4A5A7A, #5F718E, #7488A2, #8A9FB6);
+}
+
+.conteudoprincipal {
+    max-width: 1440px;
+    /* largura máxima do conteúdo */
+    margin: 0 auto;
+    /* centraliza o conteúdo horizontalmente */
+    padding: 0 100px;
+    /* adiciona margem de 20px nas laterais */
+}
+
+/* classes reutilizáveis */
+.conteiner {
+    /* delimita o conteúdo do site */
+    max-width: 1440px;
+    padding: 0 20px;
+    /* ajuste de padding para controle de margem nas laterais */
+    display: flex;
+    align-items: center;
+    /* centraliza verticalmente os elementos */
+    justify-content: flex-start;
+    margin-right: auto;
+
+}
+
+nav {
+    height: 200px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* permite que o nav ocupe todo o espaço disponível */
+}
+
+.logo {
+    justify-content: flex-start;
+    margin-right: auto;
+    /* empurra a logo para a esquerda */
+}
+
+.logo img {
+    justify-content: flex-start;
+    margin-right: auto;
+    /* empurra a logo para a esquerda */
+    margin-left: 0px;
+    width: 500px;
+    height: auto;
+
+}
+
+.ul {
+    display: flex;
+    margin: 0;
+    /* remove a margem vertical */
+    padding: 0;
+    /* remove padding padrão */
+    list-style: none;
+    /* remove bullets */
+}
+
+.ul li {
+    margin: 0 10px;
+    /* espaçamento entre itens */
+}
+
+.ul li a {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    /* remove sublinhado */
+    margin: 0 35px;
+    transition: 1s;
+}
+
+.ul li a:hover {
+    color: #62A5D9;
+
+}
+
+
+/*slogan*/
+
+.slogan {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    /* transforma a seção em um flex conteiner */
+    justify-content: flex-start;
+    /* alinha o conteúdo à esquerda */
+    align-items: center;
+    /* centraliza verticalmente */
+    padding-left: 20px;
+    /* adiciona um pouco de espaço à esquerda */
+    padding: 0 20px;
+    /* aplica a mesma margem usada no .conteiner */
+}
+
+
+.slogan .conteiner {
+    display: block;
+    /* altera para block, para alinhar o conteúdo à esquerda */
+    flex-direction: column;
+    /* mantém a direção dos itens em coluna */
+    align-items: center;
+    /* alinha o texto à esquerda dentro do conteiner */
+    max-width: 1440px;
+    /* garante que respeite a largura máxima */
+    padding: 0;
+
+}
+
+
+.slogan .main-text {
+    margin-top: 100px;
+    margin-left: 0;
+    /* garante que o conteúdo comece do lado esquerdo */
+    text-align: left;
+    /* alinha o texto dentro dos elementos à direita */
+    margin: 200px auto 200px 0;
+}
+
+.slogan .main-text h1,
+.slogan .main-text h2,
+.slogan .main-text p {
+    margin-left: 100px;
+    /* remove margens extras */
+}
+
+
+.slogan .main-text h1 {
+    color: #34435E;
+    font-size: 4rem;
+}
+
+.slogan .main-text h2 {
+    color: #62A5D9;
+    font-size: 3rem;
+}
+
+.slogan .main-text p {
+    margin-top: 10px;
+    color: #34435E;
+    font-size: 30px;
+}
+
+/*divisor-rosa*/
+
+.divisor-rosa {
+    height: 200px;
+    width: 100%;
+    background-color: #D8D2E1;
+}
+
+/*main-content*/
+
+
+.conteudoprincipal {
+    max-width: 1440px;
+    /* largura máxima do conteúdo */
+    margin: 0 auto;
+    /* centraliza o conteúdo horizontalmente */
+    padding: 0 20px;
+    /* adiciona margem de 20px nas laterais */
+}
+
+/* classes reutilizáveis */
+.conteiner {
+    /* delimita o conteúdo do site */
+    max-width: 1440px;
+    padding: 0 20px;
+    /* ajuste de padding para controle de margem nas laterais */
+    display: flex;
+    align-items: center;
+    /* centraliza verticalmente os elementos */
+    justify-content: space-between;
+
+}
+
+nav {
+    height: 200px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* permite que o nav ocupe todo o espaço disponível */
+}
+
+.logo {
+    margin-right: auto;
+    /* empurra a logo para a esquerda */
+    margin-left: 0;
+    width: 100%;
+}
+
+.logo img {
+    padding: 0;
+    margin-left: 0;
+    width: 300px;
+    height: auto;
+
+}
+
+.ul {
+    display: flex;
+    margin: 0;
+    /* remove a margem vertical */
+    padding: 0;
+    /* remove padding padrão */
+    list-style: none;
+    /* remove bullets */
+}
+
+.ul li {
+    margin: 0 10px;
+    /* espaçamento entre itens */
+}
+
+.ul li a {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    /* remove sublinhado */
+    margin: 0 35px;
+    transition: 1s;
+}
+
+.ul li a:hover {
+    color: #62A5D9;
+
+}
+
+
+/*slogan*/
+
+.slogan {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    /* transforma a seção em um flex conteiner */
+    justify-content: flex-start;
+    /* alinha o conteúdo à esquerda */
+    align-items: center;
+    /* centraliza verticalmente */
+    padding-left: 20px;
+    /* adiciona um pouco de espaço à esquerda */
+    padding: 0 20px;
+    /* aplica a mesma margem usada no .conteiner */
+}
+
+
+.slogan .conteiner {
+    display: block;
+    /* altera para block, para alinhar o conteúdo à esquerda */
+    flex-direction: column;
+    /* mantém a direção dos itens em coluna */
+    align-items: center;
+    /* alinha o texto à esquerda dentro do conteiner */
+    max-width: 1440px;
+    /* garante que respeite a largura máxima */
+    padding: 0;
+
+}
+
+
+.slogan .main-text {
+    margin-top: 100px;
+    margin-left: 0;
+    /* garante que o conteúdo comece do lado esquerdo */
+    text-align: left;
+    /* alinha o texto dentro dos elementos à direita */
+    margin: 200px auto 200px 0;
+}
+
+.slogan .main-text h1,
+.slogan .main-text h2,
+.slogan .main-text p {
+    margin-left: 100px;
+    /* remove margens extras */
+}
+
+
+.slogan .main-text h1 {
+    color: #34435E;
+    font-size: 4rem;
+}
+
+.slogan .main-text h2 {
+    color: #62A5D9;
+    font-size: 3rem;
+}
+
+.slogan .main-text p {
+    margin-top: 10px;
+    color: #34435E;
+    font-size: 30px;
+    font-family: Montserrat, sans-serif;
+}
+
+/*divisor-rosa*/
+
+.divisor-rosa {
+    height: 200px;
+    width: 100%;
+    background-color: #D8D2E1;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisor-rosa .conteiner {
+    display: flex;
+    /* Mantém o Flexbox */
+    flex-direction: column;
+    /* Direção da coluna para alinhar os itens verticalmente */
+    justify-content: center;
+    /* Garante que os itens sejam alinhados ao início */
+    padding: 0;
+    /* Remove padding adicional */
+    align-items: center;
+}
+
+
+/*main-content*/
+
+/* Mantendo o alinhamento de .main-content */
+.main-content {
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    /* Alinha o conteúdo ao início */
+    align-items: center;
+    padding: 0 20px;
+    /* Aplica a mesma margem usada no .conteiner */
+}
+
+.main-content .conteiner {
+    display: flex;
+    max-width: 1440px;
+    padding: 0;
+    margin: 0 auto;
+    /* Centraliza o conteiner principal */
+}
+
+/* Ajuste do texto ao lado da imagem */
+.main-content .content-text {
+    margin-left: 30px;
+    /* Adiciona margem à direita para separar da imagem */
+    width: 40%;
+    height: auto;
+    text-align: left;
+    /* Garante o alinhamento do texto à esquerda */
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+    margin: 40px auto;
+}
+
+.main-text .content-text p {
+    font-family: Montserrat, sans-serif;
+
+}
+
+
+.main-content .content-text:hover {
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+}
+
+/* Ajustes para alinhar .content-img */
+.content-img {
+    width: 50%;
+    margin-left: 0px;
+    /* garante margem consistente à esquerda */
+    padding: 0;
+    /* remove padding extra */
+
+}
+
+.content-img img {
+    width: 500px;
+    /* Ajusta a largura da imagem para preencher o contêiner */
+    height: auto;
+    margin-left: 100px;
+}
+
+
+
+/*footer*/
+
+.contato {
+    background-color: #D8D2E1;
+    height: 200px;
+    display: flex;
+    /* Torna a seção um conteiner flexível */
+    align-items: center;
+    /* Centraliza verticalmente o conteúdo */
+    justify-content: flex-start;
+    /* Alinha o conteúdo ao lado esquerdo */
+    padding: 0;
+    /* Remove o padding horizontal */
+}
+
+.contato .conteiner {
+    display: flex;
+    /* Mantém o Flexbox */
+    flex-direction: column;
+    /* Direção da coluna para alinhar os itens verticalmente */
+    justify-content: flex-start;
+    /* Garante que os itens sejam alinhados ao início */
+    padding: 0;
+    /* Remove padding adicional */
+}
+
+.contato h4,
+.contato p {
+    /* Margem de 100px à esquerda para ambos os elementos */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+.contato h4 {
+
+    margin-left: 100px;
+    font-size: 1.5rem;
+    color: #34435E;
+}
+
+.contato p {
+    color: #34435E;
+    font-size: 1rem;
+    margin-left: -20px;
+    font-family: Montserrat, sans-serif;
+}
+
+.Beatriz {
+    background-color: #34435E;
+    height: 100px;
+    display: flex;
+    /* Torna a seção um conteiner flexível */
+    align-items: center;
+    /* Centraliza verticalmente o conteúdo */
+}
+
+.Beatriz .conteiner {
+
+    display: flex;
+    /* Mantém o Flexbox */
+    flex-direction: column;
+    /* Direção da coluna para alinhar os itens verticalmente */
+    justify-content: flex-start;
+    /* Garante que os itens sejam alinhados ao início */
+    padding: 0;
+    /* Remove padding adicional */
+}
+
+.Beatriz p {
+    margin-left: 100px;
+    font-family: Montserrat, sans-serif;
+    color: #D8D2E1;
+}
+
+
+/*slogan*/
+
+.slogan {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    /* transforma a seção em um flex conteiner */
+    justify-content: flex-start;
+    /* alinha o conteúdo à esquerda */
+    align-items: center;
+    /* centraliza verticalmente */
+    padding-left: 20px;
+    /* adiciona um pouco de espaço à esquerda */
+    padding: 0 20px;
+    /* aplica a mesma margem usada no .conteiner */
+}
+
+
+.slogan .conteiner {
+    display: block;
+    /* altera para block, para alinhar o conteúdo à esquerda */
+    flex-direction: column;
+    /* mantém a direção dos itens em coluna */
+    align-items: center;
+    /* alinha o texto à esquerda dentro do contêiner */
+    max-width: 1440px;
+    /* garante que respeite a largura máxima */
+    padding: 0;
+
+}
+
+
+.slogan .main-text {
+    margin-top: 100px;
+    margin-left: 0;
+    /* garante que o conteúdo comece do lado esquerdo */
+    text-align: left;
+    /* alinha o texto dentro dos elementos à direita */
+    margin: 200px auto 200px 0;
+}
+
+.slogan .main-text h1,
+.slogan .main-text h2,
+.slogan .main-text p {
+    margin-left: 100px;
+    /* remove margens extras */
+}
+
+
+.slogan .main-text h1 {
+    color: #34435E;
+    font-size: 4rem;
+}
+
+.slogan .main-text h2 {
+    color: #62A5D9;
+    font-size: 3rem;
+}
+
+.slogan .main-text p {
+    margin-top: 10px;
+    color: #34435E;
+    font-size: 30px;
+}
+
+/*divisor-rosa*/
+
+.divisor-rosa {
+    height: 200px;
+    width: 100%;
+    background-color: #D8D2E1;
+}
+
+/*main-content*/
+
+
+.conteudoprincipal {
+    max-width: 1440px;
+    /* largura máxima do conteúdo */
+    margin: 0 auto;
+    /* centraliza o conteúdo horizontalmente */
+    padding: 0 20px;
+    /* adiciona margem de 20px nas laterais */
+}
+
+/* classes reutilizáveis */
+.conteiner {
+    /* delimita o conteúdo do site */
+    max-width: 1440px;
+    padding: 0 20px;
+    /* ajuste de padding para controle de margem nas laterais */
+    display: flex;
+    align-items: center;
+    /* centraliza verticalmente os elementos */
+    justify-content: space-between;
+
+}
+
+nav {
+    height: 200px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /* permite que o nav ocupe todo o espaço disponível */
+}
+
+.logo {
+    margin-right: auto;
+    /* empurra a logo para a esquerda */
+    margin-left: 0;
+    width: 100%;
+}
+
+.logo img {
+    padding: 0;
+    margin-left: 0;
+    width: 300px;
+    height: auto;
+
+}
+
+.ul {
+    display: flex;
+    margin: 0;
+    /* remove a margem vertical */
+    padding: 0;
+    /* remove padding padrão */
+    list-style: none;
+    /* remove bullets */
+}
+
+.ul li {
+    margin: 0 10px;
+    /* espaçamento entre itens */
+}
+
+.ul li a {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    /* remove sublinhado */
+    margin: 0 35px;
+    transition: 1s;
+}
+
+.ul li a:hover {
+    color: #62A5D9;
+
+}
+
+
+/* Estilo para a seção do slogan */
+.slogan {
+    height: 400px;
+    /* altura da seção */
+    width: 100%;
+    /* largura total */
+    display: flex;
+    /* transforma a seção em um flex conteiner */
+    justify-content: flex-start;
+    /* alinha o conteúdo à esquerda */
+    align-items: center;
+    /* centraliza verticalmente */
+    padding-left: 20px;
+    /* adiciona um pouco de espaço à esquerda */
+    padding: 0 20px;
+    /* aplica a mesma margem usada no .conteiner */
+}
+
+/* Estilo do conteiner dentro da seção do slogan */
+.slogan .conteiner {
+    display: block;
+    /* altera para block, para alinhar o conteúdo à esquerda */
+    flex-direction: column;
+    /* mantém a direção dos itens em coluna */
+    align-items: center;
+    /* centraliza os itens dentro do contêiner */
+    max-width: 1440px;
+    /* garante que respeite a largura máxima */
+    padding: 0;
+    /* remove padding */
+}
+
+/* Estilo do texto principal dentro da seção do slogan */
+.slogan .main-text {
+    margin-top: 100px;
+    /* margem superior */
+    margin-left: 0;
+    /* garante que o conteúdo comece do lado esquerdo */
+    text-align: left;
+    /* alinha o texto à esquerda */
+    margin: 200px auto 200px 0;
+    /* margens superior, inferior e esquerda */
+}
+
+/* Estilo dos elementos de texto dentro da seção do slogan */
+.slogan .main-text h1,
+.slogan .main-text h2,
+.slogan .main-text p {
+    margin-left: 100px;
+    /* margem à esquerda */
+}
+
+/* Estilo do título principal */
+.slogan .main-text h1 {
+    color: #34435E;
+    /* cor do texto */
+    font-size: 4rem;
+    /* tamanho da fonte */
+}
+
+/* Estilo do subtítulo */
+.slogan .main-text h2 {
+    color: #62A5D9;
+    /* cor do texto */
+    font-size: 3rem;
+    /* tamanho da fonte */
+}
+
+/* Estilo do parágrafo */
+.slogan .main-text p {
+    margin-top: 10px;
+    /* margem superior */
+    color: #34435E;
+    /* cor do texto */
+    font-size: 30px;
+    /* tamanho da fonte */
+}
+
+/* Estilo para o divisor rosa */
+.divisor-rosa {
+    height: 200px;
+    /* altura do divisor */
+    width: 100%;
+    /* largura total */
+    background-color: #D8D2E1;
+    /* cor de fundo */
+}
+
+
+/* Mantendo o alinhamento de .main-content */
+.main-content {
+    height: 700px;
+    /* altura da seção */
+    display: flex;
+    /* transforma a seção em um flex conteiner */
+    justify-content: flex-start;
+    /* alinha o conteúdo ao início */
+    align-items: center;
+    /* centraliza verticalmente */
+    padding: 0 20px;
+    /* aplica a mesma margem usada no .conteiner */
+}
+
+/* Estilo do conteiner dentro da seção principal */
+.main-content .conteiner {
+    display: flex;
+    /* exibe os itens em linha */
+    max-width: 1440px;
+    /* largura máxima do conteiner */
+    padding: 0;
+    /* remove padding */
+    margin: 0 auto;
+    /* centraliza o conteiner principal */
+}
+
+/* Ajuste do texto ao lado da imagem */
+.main-content .content-text {
+    margin-left: 30px;
+    /* adiciona margem à direita para separar da imagem */
+    width: 40%;
+    /* largura do texto */
+    height: auto;
+    /* altura automática */
+    text-align: left;
+    /* garante o alinhamento do texto à esquerda */
+    cursor: pointer;
+    /* muda o cursor ao passar sobre o texto */
+    padding: 30px;
+    /* padding interno */
+    border-radius: 15px;
+    /* bordas arredondadas */
+    transition: 0.3s;
+    /* transição suave para mudanças de estilo */
+    margin: 40px auto;
+    /* margens superior e inferior */
+}
+
+/* Estilo do parágrafo dentro do texto principal */
+.main-text .content-text p {
+    font-family: Montserrat, sans-serif;
+    /* define a fonte do parágrafo */
+}
+
+/* Estilo do texto ao passar o mouse */
+.main-content .content-text:hover {
+    box-shadow: 0px 10px 67px 8px #e6e6fa85;
+    /* sombra ao passar o mouse */
+}
+
+/* Ajustes para alinhar .content-img */
+.content-img {
+    width: 50%;
+    /* largura da imagem */
+    margin-left: 0px;
+    /* garante margem consistente à esquerda */
+    padding: 0;
+    /* remove padding extra */
+}
+
+/* Estilo da imagem dentro do conteiner de imagem */
+.content-img img {
+    width: 500px;
+    /* ajusta a largura da imagem para preencher o contêiner */
+    height: auto;
+    /* altura automática para manter a proporção */
+    margin-left: 100px;
+    /* margem à esquerda */
+}
+
+/* Estilo para o rodapé */
+.contato {
+    background-color: #D8D2E1;
+    /* cor de fundo */
+    height: 200px;
+    /* altura do rodapé */
+    display: flex;
+    /* torna a seção um conteiner flexível */
+    align-items: center;
+    /* centraliza verticalmente o conteúdo */
+    justify-content: flex-start;
+    /* alinha o conteúdo ao lado esquerdo */
+    padding: 0;
+    /* remove o padding horizontal */
+}
+
+/* Estilo do conteiner dentro do rodapé */
+.contato .conteiner {
+    display: flex;
+    /* mantém o Flexbox */
+    flex-direction: column;
+    /* direção da coluna para alinhar os itens verticalmente */
+    justify-content: flex-start;
+    /* garante que os itens sejam alinhados ao início */
+    padding: 0;
+    /* remove padding adicional */
+}
+
+
+/* Estilo para os elementos h4 e p dentro da seção de contato */
+.contato h4,
+.contato p {
+    text-align: left;
+    /* Alinha o texto à esquerda */
+}
+
+/* Estilo para o elemento h4 dentro da seção de contato */
+.contato h4 {
+    margin-left: 100px;
+    /* margem à esquerda */
+    font-size: 1.5rem;
+    /* tamanho da fonte */
+    color: #34435E;
+    /* cor do texto */
+}
+
+/* Estilo para o parágrafo dentro da seção de contato */
+.contato p {
+    color: #34435E;
+    /* cor do texto */
+    font-size: 1rem;
+    /* tamanho da fonte */
+    margin-left: -20px;
+    /* margem à esquerda */
+    font-family: Montserrat, sans-serif;
+    /* define a fonte do parágrafo */
+}
+
+/* Estilo para a seção Beatriz */
+.Beatriz {
+    background-color: #34435E;
+    /* cor de fundo */
+    height: 100px;
+    /* altura da seção */
+    display: flex;
+    /* torna a seção um conteiner flexível */
+    align-items: center;
+    /* centraliza verticalmente o conteúdo */
+}
+
+/* Estilo do contesiner dentro da seção Beatriz */
+.Beatriz .conteiner {
+    display: flex;
+    /* mantém o Flexbox */
+    flex-direction: column;
+    /* direção da coluna para alinhar os itens verticalmente */
+    justify-content: flex-start;
+    /* garante que os itens sejam alinhados ao início */
+    padding: 0;
+    /* remove padding adicional */
+}
+
+/* Estilo do parágrafo dentro da seção Beatriz */
+.Beatriz p {
+    margin-left: 100px;
+    /* margem à esquerda */
+    font-family: Montserrat, sans-serif;
+    /* define a fonte do parágrafo */
+    color: #D8D2E1;
+    /* cor do texto */
+}
